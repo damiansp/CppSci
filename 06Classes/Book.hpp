@@ -14,6 +14,9 @@ public:
     format;
   int price; // in cents
 
+  // Constr
+  Book();
+  
   // Acc
   void setYearOfPublication(int year);
   int getYearOfPublication() const;
