@@ -1,5 +1,5 @@
 /* Book.hpp */
-// Book class
+// Book class header
 #ifndef BOOK_HPP
 #define BOOK_HPP
 
@@ -16,6 +16,8 @@ public:
 
   // Constr
   Book();
+  Book(const Book& otherBook);
+  Book(string bookTitle);
   
   // Acc
   void setYearOfPublication(int year);
