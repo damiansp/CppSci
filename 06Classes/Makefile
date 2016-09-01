@@ -1,3 +1,12 @@
+ComplexTest : ComplexTest.o Complex.o
+	g++ -Wall ComplexTest.o Complex.o -o ComplexTest
+
+Complex.o : Complex.cpp Complex.hpp
+	g++ -c -Wall Complex.cpp
+
+ComplexTest.o : ComplexTest.cpp Complex.hpp
+	g++ -c -Wall ComplexTest.cpp
+
 friendTest : friendTest.o friend.o
 	g++ -Wall friendTest.o friend.o -o friendTest
 
