@@ -20,8 +20,8 @@ public:
   double& operator[](int i); // 0-based indexing
   double& operator()(int i); // 1-based indexing
   Vector& operator=(const Vector& otherVector); // copy assignment
-  Vector operator+();                           // unary +
-  Vector operator-();                           // unary -
+  Vector operator+() const;                     // unary +
+  Vector operator-() const;                     // unary -
   Vector operator+(const Vector& v1) const;     // binary +
   Vector operator-(const Vector& v1) const;     // binary -
   Vector operator*(double a) const;             // scalar mult
